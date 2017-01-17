@@ -79,4 +79,8 @@ label.menuTitle {
 	max-height: 132px;
 }
 
+.mainMenu input:checked ~ label.menuTitle{
+	background: url(../img/menu_h.png) no-repeat 97% 10px;
+	transition:  2s;
+}
 /*****************************************************************************/
