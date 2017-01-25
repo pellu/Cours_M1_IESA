@@ -1,4 +1,27 @@
 @import 'reset';
+body{
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, footer{
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+}
+header, main, footer{
+	width: 900px;
+	margin: auto;
+	padding: 2%;
+}
+
+header{
+	min-height: 100px;
+}
+section{
+	padding: 2%; min-height: 400px; 
+}
+
+/*IMBRICATION*/
 header{
 	h1{
 		text-transform: uppercase;
@@ -7,7 +30,103 @@ header{
 		ul{
 			li{
 				display: inline-block;
+				margin: 1%;
+				a{
+					text-decoration: none;
+					font-weight: 700;
+					color: peru;
+					&:hover{
+						color: tomato;
+					};
+					&:active{
+						color: darkorange;
+					};
+					&:focus{
+						color: royalblue;
+					};
+				}
 			}
 		}
 	}
 }
+
+/*HERITAGE*/
+.message{
+	border: 5px solid;
+	padding: 2%;
+	margin: 1%;
+	color: #000;
+	font-weight: 700;
+	&::before{
+		content:'→ ';
+		font-size: 20px;
+	};
+	em{
+		text-decoration: underline;
+		font-style: italic;
+	}
+}
+
+.success{
+	@extend .message;
+	background: green;
+	&::before{
+		content: "👍 ";
+	};
+}
+.error{
+	@extend .message;
+	background: red;
+}
+.warning{
+	@extend .message;
+	background: orange;
+}
+.nouvelEncart{
+	@extend .message;
+	background: purple;
+}
+
+
+/*la portée de l'héritage*/
+#divParent{
+	.message{
+		border: 2px solid;
+		padding: 2%;
+		margin: 1%;
+		font-weight: 700;
+		&:hover{
+			background: deepskyblue;
+			cursor: pointer;
+		};
+	}
+	
+
+	.success{
+		@extend .message;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Emplacement JS</title>
+	<script>
+		//alert('alert');
+		//Afficher du texte avec du js
+		document.write('<h2>Concole</h2>');
+		//Afficher du code dans la console
+		console.log('erreurs de syntaxe');
+		console.info('info dans la console');
+
+		//Variable
+		var maBoite;
+		maBoite = 10;
+		document.write(maBoite);
+		//Variable différente
+		maboite='bonjour';
+		//
+		var prenom="paul", nom="popol", genre="inconnu";
+		document.write(prenom);
+		document.write('<br>');
+		prenom=nom;
+		document.write(prenom);
+	</script>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			text-align: center;
+			padding: 5px 0;
+			background: #000;
+			color: #00c6ff;
+		}
+		h2{
+			background: #000;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Emplacement</h1>
+	</header>
+	<section>
+		<!-- Balise s'affiche seulement si le js est désactivé -->
+		<noscript>merci d'activer le javascript de votre navigateur</noscript>
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+</html>
