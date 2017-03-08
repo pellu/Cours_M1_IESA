@@ -1,5 +1,8 @@
 <?php
-	echo "";
+if($_POST){
+	echo "Prénom : " .$_POST['prenom']."<br>";
+	echo "Description : " .$_POST['description']."<br>";
+}
 ?>
 <!DOCTYPE html>
 <html>
