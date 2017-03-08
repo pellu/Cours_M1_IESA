@@ -2,6 +2,9 @@
 if($_POST){
 	echo "Prénom : " .$_POST['prenom']."<br>";
 	echo "Description : " .$_POST['description']."<br>";
+	echo "ville : " .$_POST['ville']."<br>";
+	echo "codepostal : " .$_POST['codepostal']."<br>";
+	echo "adresse : " .$_POST['adresse']."<br>";
 }
 ?>
 <!DOCTYPE html>
@@ -18,8 +21,17 @@ if($_POST){
 		<label for="prenom">Prénom</label>
 		<input type="text" name="prenom" id="prenom">
 		<br>
+		<label for="ville">ville</label>
+		<input type="text" name="ville" id="ville">
+		<br>
+		<label for="codepostal">codepostal</label>
+		<input type="text" name="codepostal" id="codepostal">
+		<br>
+		<label for="adresse">adresse</label>
+		<input type="text" name="adresse" id="adresse">
+		<br>
 		<label for="description">Description</label>
-		<textarea type="text" name="descriptio" id="description"></textarea>
+		<textarea type="text" name="description" id="description"></textarea>
 		<input type="submit" name="submit">
 	</form>
 </body>
