@@ -34,5 +34,13 @@ if($_POST){
 		<textarea type="text" name="description" id="description"></textarea>
 		<input type="submit" name="submit">
 	</form>
+		<form method="post" action="formulaire4.php">
+		<label for="pseudo">pseudo</label>
+		<input type="text" name="pseudo" id="pseudo">
+		<br>
+		<label for="mail">mail</label>
+		<input type="email" name="mail" id="mail">
+		<input type="submit" name="submit">
+	</form>
 </body>
 </html>
